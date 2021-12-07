@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex1_9</title>
+    <script>
+      /*
+        Cálculo do valor do jantar
+
+        ElABORAR UM PROGRMA QUE LEIA O VALOR DE UM JANTAR. CALCULE E INFORME O VALOR DA TAXA DO GARÇOM (10%) E O VALOR TOTAL A SER PAGO.
+          - Valor do Jantar: 80.00
+          - Taxa do Garçom: 8.00
+          - Total a Pagar: 88.00
+
+        Método toFixed(2) - indica que o valor da saída vai ter 2 casas decimais
+      */
+
+      var jantar = Number(prompt('Valor do jantar R$:'))
+
+      var taxaGarcom = jantar * 0.1
+      var total = jantar + taxaGarcom
+
+      alert(
+        'Taxa do Graçom R$: ' +
+          taxaGarcom.toFixed(2) +
+          '\nTotal R$: ' +
+          total.toFixed(2)
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
