@@ -10,12 +10,16 @@ function criarEstrelas() {
     return
   }
 
+  // variável que rá concatenar com estrelas
   var estrelas = ''
 
+  // cria uma repetição (até o número de linhas informado)
   for (var i = 1; i <= numLinhas; i++) {
     for (var j = 1; j <= i; j++) {
+      // dentro dessa repetição é criada uma outra (para cada linha, até i)
       estrelas = estrelas + '*'
     }
+    // faz uma quebra de linha
     estrelas = estrelas + '\n'
   }
 
